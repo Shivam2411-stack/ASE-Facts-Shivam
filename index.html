@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASE Facts - Earth</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="earth.jpg">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <img src="A1p.png" alt="ASE Logo">
+            <p>ASE Facts</p>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="right">
+            <a href="moon.html">Moon</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="mars.html">Mars</a>
+            <a href="venus.html">Venus</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="moon.html">Moon</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="mars.html">Mars</a>
+        <a href="venus.html">Venus</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+        <a href="neptune.html">Neptune</a>
+    </div>
+    <section id="mid">
+        <h1>Hello There!</h1>
+        <h3>What is Earth.....? </h3>
+        <div class="content">
+            <img src="earth.jpg" width="250" height="200" alt="Earth">
+            <iframe src="https://www.youtube.com/embed/WYeFqSjvGaY?autoplay=1&loop=1&mute=1&controls=0&playlist=WYeFqSjvGaY"
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+        <p>
+            Earth is our home planet. Scientists believe Earth and its moon formed around the same time as the rest of
+            the solar system.<br> They think that was about 4.5 billion years ago. Earth is the fifth-largest plan in
+            the solar system. Its diameter is about 8,000 miles.<br> And Earth is the third-closest planet to the sun.
+            Its average distance from the sun is about 93 million miles. Only Mercury and Venus are closer.<br>
+            In the video on the right of your screen shows how Earth rotate around itself!
+        </p>
+        <hr class="styled-hr red">
+        <h3> About the Earth</h3>
+        <ul>
+            <li> Mass : 5.97219 &times; 10<sup>24</sup> kg.</li>
+            <li> Equatorial diameter : 12,742 km</li>
+            <li> surface Gravity : 9.807 m/s²</li>
+            <li> Average Temperature : 15&deg;C</li>
+        </ul>
+        <hr class="styled-hr orange">
+        <h3> Some Facts about Earth</h3>
+        <ol>
+            <li> Earth is the only place in the known universe confirmed to host life.</li>
+            <li> It's the only one known for sure to have liquid water on its surface.</li>
+            <li> It is not flat, but it's not perfectly round either..</li>
+            <li> Earth takes 23.9 hr to complete 1 self rotation(1 day).</li>
+            <li> It is not a perfect sphere.</li>
+        </ol>
+        <hr class="styled-hr yellow">
+        <h3>*Things to know about the planets in our solar system </h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Planets</th>
+                    <th>Diameter</th>
+                    <th>Temperature</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mercury</td>
+                    <td>4,879.4 km</td>
+                    <td>167°C</td>
+                </tr>
+                <tr>
+                    <td>Venus</td>
+                    <td>12,104 km</td>
+                    <td>464°C</td>
+                </tr>
+                <tr>
+                    <td>Moon</td>
+                    <td>3,474.8 km</td>
+                    <td>21°C</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>6,779 km</td>
+                    <td>27.2°C</td>
+                </tr>
+                <tr>
+                    <td>Jupiter</td>
+                    <td>139,820 km</td>
+                    <td>-150°C</td>
+                </tr>
+                <tr>
+                    <td>Saturn</td>
+                    <td>116,460 km</td>
+                    <td>-176.11°C</td>
+                </tr>
+                <tr>
+                    <td>Uranus</td>
+                    <td>50,724 km</td>
+                    <td>-213.889°C</td>
+                </tr>
+                <tr>
+                    <td>Neptune</td>
+                    <td>49,244 km</td>
+                    <td>-225°C</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="styled-hr green">
+    </section>
+    <footer>
+        <p class="float">Powered by ASE Facts | Astronomical Space Elongation</p>
+        <p class="float1">&#169; 2023 ASE Facts Ltd All rights Reserved | Contact Us - Mail:
+            <i>asefactsltd@gmail.com</i></p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

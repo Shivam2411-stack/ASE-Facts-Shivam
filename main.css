@@ -1,0 +1,263 @@
+/* Reset styles */
+body {
+    background-color: #282828;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+nav, #mid {
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Navigation bar */
+nav {
+    background: linear-gradient(to left, #000000 0%, #ff5e00 100%);
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.left img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.left p {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    width: 250px;
+}
+
+.right {
+    display: flex;
+    gap: 40px;
+}
+
+.right a {
+    margin-left: 45px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: all 0.1s;
+}
+
+.right a:hover {
+    color: #ff7f50;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    background: #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 2; /* Ensure it appears above other content */
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.mobile-menu a:hover {
+    background: #ff7f50;
+}
+
+/* Show mobile menu when 'open' class is added */
+.mobile-menu.open {
+    display: block;
+}
+
+/* Content Section */
+#mid {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#mid h1 {
+    color: #ff5e00;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#mid h3 {
+    color: #ff7f50;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#mid p, #mid ul, #mid ol {
+    line-height: 1.6;
+}
+
+#mid img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px; /* Rounded corners */
+    border: 5px solid #ff5e00; /* Orange border */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effects */
+#mid img:hover {
+    transform: scale(1.05); /* Slightly enlarge image */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7); /* Darker shadow on hover */
+    border-color: #ff7f50; /* Change border color on hover */
+}
+
+/* Border Animation (Optional) */
+#mid img::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px dashed #30fa23; /* Green dashed border */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#mid img:hover::after {
+    opacity: 1; /* Show dashed border on hover */
+}
+
+#mid iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.styled-hr {
+    border: 0;
+    height: 2px;
+    margin: 20px 0;
+}
+
+.styled-hr.red {
+    background-color: #ff0000;
+}
+
+.styled-hr.orange {
+    background-color: #ffa500;
+}
+
+.styled-hr.yellow {
+    background-color: #ffff00;
+}
+
+.styled-hr.green {
+    background-color: #73ff00;
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #555555;
+    text-align: center;
+}
+
+.table th {
+    background-color: #444444;
+    color: #ff7f50;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #3d3d3d;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+.float {
+    font-size: 16px;
+    float: left;
+    margin-left: 25px;
+}
+
+.float1 {
+    font-size: 16px;
+    float: right;
+    margin-right: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .left {
+        width: auto;
+    }
+    .right {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}

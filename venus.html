@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASE Facts - Venus</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="venus.webp">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <img src="A1p.png" alt="ASE Logo">
+            <p>ASE Facts</p>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="right">
+            <a href="moon.html">Moon</a>
+            <a href="index.html">Earth</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="mars.html">Mars</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="moon.html">Moon</a>
+        <a href="index.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+        <a href="neptune.html">Neptune</a>
+    </div>
+    <section id="mid">
+        <h1>Hello World!</h1>
+        <h3>Some Facts about the Planet Venus</h3>
+        <div class="content">
+            <img src="venus.webp" width="250" height="200" alt="Venus">
+            <iframe src="https://www.youtube.com/embed/4XPsMtzp4fo??autoplay=1&loop=1&mute=1&controls=0&playlist=4XPsMtzp4fo" 
+                title="Venus Rotation Video" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p>
+            Venus is the second planet from the Sun. It is sometimes called Earth's "sister" or "twin" planet as it is almost as large and has a similar composition.<br>
+            As an interior planet to Earth, Venus appears in Earth's sky never far from the Sun, either as the morning star or evening star.<br>
+            The video on the right shows how Venus rotates around itself!
+        </p>
+        <hr class="styled-hr red">
+        <h3>About Venus</h3>
+        <ul>
+            <li>Mass: 4.867 × 10<sup>24</sup> kg</li>
+            <li>Equatorial diameter: 12,104 km</li>
+            <li>Surface Gravity: 8.87 m/s²</li>
+            <li>Average Temperature: 464°C</li>
+        </ul>
+        <hr class="styled-hr orange">
+        <h3>Some Facts about Venus</h3>
+        <ol>
+            <li>Venus is hotter than Mercury, despite being further from the Sun.</li>
+            <li>Unlike the other planets in our solar system, Venus spins clockwise on its axis.</li>
+            <li>Venus is the second brightest natural object in the night sky after the Moon.</li>
+            <li>Venus takes 243 Earth days to complete one rotation.</li>
+            <li>A day on Venus is longer than a year.</li>
+        </ol>
+        <hr class="styled-hr yellow">
+        <h3>Things to Know about the Planets in Our Solar System</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Planets</th>
+                    <th>Diameter</th>
+                    <th>Temperature</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mercury</td>
+                    <td>4,879.4 km</td>
+                    <td>167°C</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>6,779 km</td>
+                    <td>27.2°C</td>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>12,742 km</td>
+                    <td>15°C</td>
+                </tr>
+                <tr>
+                    <td>Moon</td>
+                    <td>6,779 km</td>
+                    <td>27.2°C</td>
+                </tr>
+                <tr>
+                    <td>Jupiter</td>
+                    <td>139,820 km</td>
+                    <td>-150°C</td>
+                </tr>
+                <tr>
+                    <td>Saturn</td>
+                    <td>116,460 km</td>
+                    <td>-176.11°C</td>
+                </tr>
+                <tr>
+                    <td>Uranus</td>
+                    <td>50,724 km</td>
+                    <td>-213.889°C</td>
+                </tr>
+                <tr>
+                    <td>Neptune</td>
+                    <td>49,244 km</td>
+                    <td>-225°C</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="styled-hr green">
+    </section>
+    <footer>
+        <p class="float">Powered by ASE Facts | Astronomical Space Elongation</p>
+        <p class="float1">&#169; 2023 ASE Facts Ltd All rights Reserved | Contact Us - Mail:
+            <i>asefactsltd@gmail.com</i></p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

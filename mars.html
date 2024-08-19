@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASE Facts - Mars</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="mars.jpeg">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <img src="A1p.png" alt="ASE Logo">
+            <p>ASE Facts</p>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="right">
+            <a href="moon.html">Moon</a>
+            <a href="index.html">Earth</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="venus.html">Venus</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="moon.html">Moon</a>
+        <a href="index.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+        <a href="neptune.html">Neptune</a>
+    </div>
+    <section id="mid">
+        <h1>Hello World!</h1>
+        <h3>Some Facts about the Planet Mars</h3>
+        <div class="content">
+            <img src="mars.jpeg" width="250" height="200" alt="Mars">
+            <iframe src="https://www.youtube.com/embed/rpjQ9aL8PLs?autoplay=1&loop=1&mute=1&controls=0" 
+                title="Mars Rotation Video" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p>
+            Mars is sometimes called the Red Planet. It's red because of rusty iron in the ground.<br>
+            Like Earth, Mars has seasons, polar ice caps, volcanoes, canyons, and weather.<br>
+            It has a very thin atmosphere made of carbon dioxide, nitrogen, and argon.<br>
+            The video on the right shows how Mars rotates around itself!
+        </p>
+        <hr class="styled-hr red">
+        <h3>About Mars</h3>
+        <ul>
+            <li>Mass: 6.39 × 10<sup>23</sup> kg</li>
+            <li>Equatorial diameter: 6,779 km</li>
+            <li>Surface Gravity: 3.721 m/s²</li>
+            <li>Average Temperature: 27.2°C</li>
+        </ul>
+        <hr class="styled-hr orange">
+        <h3>Some Facts about Mars</h3>
+        <ol>
+            <li>Mars is smaller than Earth with a diameter of 6,779 km.</li>
+            <li>Mars has two moons: Deimos and Phobos.</li>
+            <li>Earth takes 24.6 hours to complete one rotation.</li>
+            <li>Mars is named after the Roman god of war.</li>
+        </ol>
+        <hr class="styled-hr yellow">
+        <h3>Things to Know about the Planets in Our Solar System</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Planets</th>
+                    <th>Diameter</th>
+                    <th>Temperature</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mercury</td>
+                    <td>4,879.4 km</td>
+                    <td>167°C</td>
+                </tr>
+                <tr>
+                    <td>Venus</td>
+                    <td>12,104 km</td>
+                    <td>464°C</td>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>12,742 km</td>
+                    <td>15°C</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>6,779 km</td>
+                    <td>27.2°C</td>
+                </tr>
+                <tr>
+                    <td>Jupiter</td>
+                    <td>139,820 km</td>
+                    <td>-150°C</td>
+                </tr>
+                <tr>
+                    <td>Saturn</td>
+                    <td>116,460 km</td>
+                    <td>-176.11°C</td>
+                </tr>
+                <tr>
+                    <td>Uranus</td>
+                    <td>50,724 km</td>
+                    <td>-213.889°C</td>
+                </tr>
+                <tr>
+                    <td>Neptune</td>
+                    <td>49,244 km</td>
+                    <td>-225°C</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="styled-hr green">
+    </section>
+    <footer>
+        <p class="float">Powered by ASE Facts | Astronomical Space Elongation</p>
+        <p class="float1">&#169; 2023 ASE Facts Ltd All rights Reserved | Contact Us - Mail:
+            <i>asefactsltd@gmail.com</i></p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

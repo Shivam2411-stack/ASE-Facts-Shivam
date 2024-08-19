@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASE Facts - Jupiter</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="jupiter.jpg">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <img src="A1p.png" alt="ASE Logo">
+            <p>ASE Facts</p>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="right">
+            <a href="index.html">Earth</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="mars.html">Mars</a>
+            <a href="venus.html">Venus</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="moon.html">Moon</a>
+            <a href="neptune.html">Neptune</a>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="mars.html">Mars</a>
+        <a href="venus.html">Venus</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="moon.html">Moon</a>
+        <a href="neptune.html">Neptune</a>
+    </div>
+    <section id="mid">
+        <h1>Hello World!</h1>
+        <h3>Some Facts about the Planet Jupiter</h3>
+        <div class="content">
+            <img src="jupiter.jpg" width="250" height="200" alt="Jupiter">
+            <iframe src="https://www.youtube.com/embed/vGBjOH9cAVQ?autoplay=1&loop=1&mute=1&controls=0" 
+                title="Jupiter Rotation Video" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p>
+            Jupiter is the fifth planet from the Sun and the largest in the Solar System.<br>
+            It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined,<br>
+            and slightly less than one one-thousandth the mass of the Sun.<br>
+            The video on the right shows how Jupiter rotates around itself!
+        </p>
+        <hr class="styled-hr red">
+        <h3>About Jupiter</h3>
+        <ul>
+            <li>Mass: 1.89813 × 10<sup>27</sup> kg</li>
+            <li>Equatorial diameter: 139,820 km</li>
+            <li>Surface Gravity: 24.79 m/s²</li>
+            <li>Average Temperature: -150°C</li>
+        </ul>
+        <hr class="styled-hr orange">
+        <h3>Some Facts about Jupiter</h3>
+        <ol>
+            <li>Jupiter is the fastest spinning planet in the Solar System.</li>
+            <li>The Great Red Spot has been around for a long time.</li>
+            <li>Jupiter's magnetic field is 14 times stronger than Earth's.</li>
+            <li>Jupiter takes 9hr 56m to complete one rotation.</li>
+            <li>The clouds on Jupiter are only 50 km thick.</li>
+        </ol>
+        <hr class="styled-hr yellow">
+        <h3>Things to Know about the Planets in Our Solar System</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Planets</th>
+                    <th>Diameter</th>
+                    <th>Temperature</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mercury</td>
+                    <td>4,879.4 km</td>
+                    <td>167°C</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>6,779 km</td>
+                    <td>27.2°C</td>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>12,742 km</td>
+                    <td>15°C</td>
+                </tr>
+                <tr>
+                    <td>Moon</td>
+                    <td>6,779 km</td>
+                    <td>27.2°C</td>
+                </tr>
+                <tr>
+                    <td>Venus</td>
+                    <td>12,104 km</td>
+                    <td>464°C</td>
+                </tr>
+                <tr>
+                    <td>Saturn</td>
+                    <td>116,460 km</td>
+                    <td>-176.11°C</td>
+                </tr>
+                <tr>
+                    <td>Uranus</td>
+                    <td>50,724 km</td>
+                    <td>-213.889°C</td>
+                </tr>
+                <tr>
+                    <td>Neptune</td>
+                    <td>49,244 km</td>
+                    <td>-225°C</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="styled-hr green">
+    </section>
+    <footer>
+        <p class="float">Powered by ASE Facts | Astronomical Space Elongation</p>
+        <p class="float1">&#169; 2023 ASE Facts Ltd All rights Reserved | Contact Us - Mail:
+            <i>asefactsltd@gmail.com</i></p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

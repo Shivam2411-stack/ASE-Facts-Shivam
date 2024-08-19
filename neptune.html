@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASE Facts - Neptune</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="neptune.png">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <img src="A1p.png" alt="ASE Logo">
+            <p>ASE Facts</p>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="right">
+            <a href="moon.html">Moon</a>
+            <a href="index.html">Earth</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="venus.html">Venus</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="mars.html">Mars</a>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="moon.html">Moon</a>
+        <a href="index.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="venus.html">Venus</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+        <a href="neptune.html">Neptune</a>
+    </div>
+
+    <section id="mid">
+        <h1>Hello World!</h1>
+        <h3>Some Facts about the Planet Neptune</h3>
+        <div class="content">
+            <img src="neptune.png" alt="Neptune" style="width: 250px; height: auto;">
+            <iframe src="https://www.youtube.com/embed/xwZ4AdrYRU8?autoplay=1&loop=1&mute=1&controls=0" 
+            title="Neptune Rotation Video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <p>
+            Neptune is the eighth planet from the Sun and the farthest known planet in the Solar System.<br>
+            It is the fourth-largest planet in the Solar System by diameter, the third-most-massive planet,<br>
+            and the densest giant planet. It is 17 times the mass of Earth, and slightly more massive than its
+            near-twin Uranus.<br>
+            The video on the right shows how Neptune rotates around itself!
+        </p>
+        <hr class="styled-hr red">
+        <h3>About Neptune</h3>
+        <ul>
+            <li>Mass: 1.024 &times; 10<sup>26</sup> kg</li>
+            <li>Equatorial diameter: 49,244 km</li>
+            <li>Surface Gravity: 11.15 m/s²</li>
+            <li>Average Temperature: -225°C</li>
+        </ul>
+        <hr class="styled-hr orange">
+        <h3>Some Facts about Neptune</h3>
+        <ol>
+            <li>Neptune's atmosphere is made up mostly of molecular hydrogen, atomic helium, and methane.</li>
+            <li>In 2011, Neptune completed its first 165-year orbit since its discovery in 1846.</li>
+            <li>Neptune is more than 30 times as far from the Sun as Earth.</li>
+            <li>Neptune takes 16 hours and 6 minutes to complete one rotation (one day).</li>
+            <li>No humans have set foot on Neptune.</li>
+        </ol>
+        <hr class="styled-hr yellow">
+        <h3>Things to Know about the Planets in Our Solar System</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Planets</th>
+                    <th>Diameter</th>
+                    <th>Temperature</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mercury</td>
+                    <td>4,879.4 km</td>
+                    <td>167°C</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>6,779 km</td>
+                    <td>27.2°C</td>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>12,742 km</td>
+                    <td>15°C</td>
+                </tr>
+                <tr>
+                    <td>Moon</td>
+                    <td>3,474.8 km</td>
+                    <td>27.2°C</td>
+                </tr>
+                <tr>
+                    <td>Venus</td>
+                    <td>12,104 km</td>
+                    <td>464°C</td>
+                </tr>
+                <tr>
+                    <td>Jupiter</td>
+                    <td>139,820 km</td>
+                    <td>-150°C</td>
+                </tr>
+                <tr>
+                    <td>Saturn</td>
+                    <td>116,460 km</td>
+                    <td>-176.11°C</td>
+                </tr>
+                <tr>
+                    <td>Uranus</td>
+                    <td>50,724 km</td>
+                    <td>-213.889°C</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="styled-hr green">
+    </section>
+
+    <footer>
+        <p class="float">Powered by ASE Facts | Astronomical Space Elongation</p>
+        <p class="float1">&#169; 2023 ASE Facts Ltd All rights Reserved | Contact Us - Mail:
+            <i>asefactsltd@gmail.com</i></p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>

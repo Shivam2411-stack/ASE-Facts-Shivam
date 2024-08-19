@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASE Facts - Uranus</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="uranus.jpeg">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <img src="A1p.png" alt="ASE Logo">
+            <p>ASE Facts</p>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="right">
+            <a href="moon.html">Moon</a>
+            <a href="index.html">Earth</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="venus.html">Venus</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <!-- <a href="uranus.html">Uranus</a> -->
+            <a href="neptune.html">Neptune</a>
+            <a href="mars.html">Mars</a>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="moon.html">Moon</a>
+        <a href="index.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="venus.html">Venus</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <!-- <a href="uranus.html">Uranus</a> -->
+        <a href="neptune.html">Neptune</a>
+    </div>
+
+    <section id="mid">
+        <h1>Hello World!</h1>
+        <h3>Some Facts about the Planet Uranus</h3>
+        <div class="content">
+            <img src="uranus.jpeg" alt="Uranus" style="width: 250px; height: auto;">
+            <iframe src="https://www.youtube.com/embed/GXSslgWH7xw?autoplay=1&loop=1&mute=1&controls=0" title="Uranus Rotation Video" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen></iframe>
+        </div>
+        <p>
+            Uranus is the seventh planet from the Sun. It is named after the Greek sky deity Uranus, who in Greek
+            mythology is the father of Cronus, a grandfather of Zeus, and great-grandfather of Ares. Uranus has the
+            third-largest planetary radius and fourth-largest planetary mass in the Solar System.<br>
+            The video on the right shows how Uranus rotates around itself!
+        </p>
+        <hr class="styled-hr red">
+        <h3>About Uranus</h3>
+        <ul>
+            <li>Mass: 8.681 &times; 10<sup>25</sup> kg</li>
+            <li>Equatorial diameter: 50,724 km</li>
+            <li>Surface Gravity: 8.87 m/s²</li>
+            <li>Average Temperature: -213.889°C</li>
+        </ul>
+        <hr class="styled-hr orange">
+        <h3>Some Facts about Uranus</h3>
+        <ol>
+            <li>Uranus's atmosphere is made of hydrogen and helium, like Jupiter and Saturn, but it also has methane.</li>
+            <li>Uranus is made of water, methane, and ammonia fluids above a small rocky center.</li>
+            <li>It was the first planet to be discovered through a telescope.</li>
+            <li>The discoverer of Uranus wanted it to be called Georgium Sidus.</li>
+            <li>Uranus takes 17 hours and 14 minutes to complete one rotation (one day).</li>
+        </ol>
+        <hr class="styled-hr yellow">
+        <h3>Things to Know about the Planets in Our Solar System</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Planets</th>
+                    <th>Diameter</th>
+                    <th>Temperature</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mercury</td>
+                    <td>4,879.4 km</td>
+                    <td>167°C</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>6,779 km</td>
+                    <td>27.2°C</td>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>12,742 km</td>
+                    <td>15°C</td>
+                </tr>
+                <tr>
+                    <td>Moon</td>
+                    <td>3,474.8 km</td>
+                    <td>27.2°C</td>
+                </tr>
+                <tr>
+                    <td>Venus</td>
+                    <td>12,104 km</td>
+                    <td>464°C</td>
+                </tr>
+                <tr>
+                    <td>Jupiter</td>
+                    <td>139,820 km</td>
+                    <td>-150°C</td>
+                </tr>
+                <tr>
+                    <td>Saturn</td>
+                    <td>116,460 km</td>
+                    <td>-176.11°C</td>
+                </tr>
+                <tr>
+                    <td>Uranus</td>
+                    <td>50,724 km</td>
+                    <td>-213.889°C</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="styled-hr green">
+    </section>
+
+    <footer>
+        <p class="float">Powered by ASE Facts | Astronomical Space Elongation</p>
+        <p class="float1">&#169; 2023 ASE Facts Ltd All rights Reserved | Contact Us - Mail:
+            <i>asefactsltd@gmail.com</i></p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>
