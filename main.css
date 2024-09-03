@@ -223,6 +223,8 @@ nav {
 }
 
 /* Footer */
+/* Footer */
+/* Footer */
 footer {
     background-color: #000000;
     padding: 20px;
@@ -230,6 +232,58 @@ footer {
     border-radius: 8px;
     color: #ffffff;
     margin-top: 50px;
+    position: relative;
+}
+
+/* Footer Text */
+.float, .float1 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.float {
+    float: left;
+    margin-left: 25px;
+}
+
+.float1 {
+    float: right;
+    margin-right: 25px;
+}
+
+/* Social Media Links */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ff7f50; /* Highlight color on hover */
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
+    .float, .float1 {
+        font-size: 14px;
+        float: none;
+        margin: 5px 0;
+    }
+
+    .social-media a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
 }
 
 footer p {
