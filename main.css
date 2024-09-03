@@ -12,11 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-nav, #mid {
-    width: 100%;
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-}
-
 /* Navigation bar */
 nav {
     background: linear-gradient(to left, #000000 0%, #ff5e00 100%);
@@ -30,6 +25,7 @@ nav {
     height: 100px;
     width: 100%;
     position: relative;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 .left img {
@@ -39,7 +35,7 @@ nav {
 }
 
 .left p {
-    font-size: 40px;
+    font-size: 32px; /* Adjusted font size for smaller screens */
     margin-left: 10px;
     font-weight: 700;
 }
@@ -49,19 +45,18 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: inherit;
-    width: 250px;
+    width: auto;
 }
 
 .right {
     display: flex;
-    gap: 40px;
+    gap: 20px; /* Reduced gap for better fit on smaller screens */
 }
 
 .right a {
-    margin-left: 45px;
     text-decoration: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px; /* Slightly smaller font size for better fit */
     transition: all 0.1s;
 }
 
@@ -80,7 +75,7 @@ nav {
 .mobile-menu {
     display: none;
     position: absolute;
-    top: 15%;
+    top: 70px; /* Adjusted position to be below the header */
     left: 0;
     width: 100%;
     background: #333333;
@@ -96,7 +91,7 @@ nav {
     padding: 10px;
     text-decoration: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px; /* Consistent font size with nav links */
 }
 
 .mobile-menu a:hover {
@@ -119,13 +114,13 @@ nav {
 
 #mid h1 {
     color: #ff5e00;
-    font-size: 36px;
+    font-size: 28px; /* Adjusted for better mobile readability */
     margin-bottom: 10px;
 }
 
 #mid h3 {
     color: #ff7f50;
-    font-size: 24px;
+    font-size: 20px; /* Adjusted for better mobile readability */
     margin-top: 20px;
 }
 
@@ -237,27 +232,46 @@ footer {
     margin-top: 50px;
 }
 
-.float {
-    font-size: 16px;
-    float: left;
-    margin-left: 25px;
+footer p {
+    margin: 10px 0;
 }
 
-.float1 {
-    font-size: 16px;
-    float: right;
-    margin-right: 25px;
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.footer-socials a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px; /* Consistent font size */
+}
+
+.footer-socials a:hover {
+    color: #ff7f50;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .left {
-        width: auto;
+    .left p {
+        font-size: 28px; /* Adjusted font size for smaller screens */
     }
+    
     .right {
         display: none;
     }
+    
     .hamburger {
         display: block;
+    }
+    
+    #mid h1 {
+        font-size: 24px; /* Adjusted for better mobile readability */
+    }
+    
+    #mid h3 {
+        font-size: 18px; /* Adjusted for better mobile readability */
     }
 }
